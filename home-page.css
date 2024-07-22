@@ -1,0 +1,693 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'NBInternationalPro-Reg';
+    overflow-x: hidden;
+   
+
+}
+.loader{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:-100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 0.3s;
+    z-index: 999;
+}
+.loader h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: lighter;
+}
+.menu-page{
+    width: 100vw;
+    height: 70vh;
+    background-color: #EDECE7;
+    position: fixed;
+    top:-100%;
+    z-index: 100;
+    display: flex;
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 2rem;
+    box-sizing: border-box;
+    line-height: 1rem;
+    transition: all linear 0.4s;
+}
+.menu-upper{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+   
+    color: #828281;
+    font-family: 'NBInternationalPro-Lig';
+}
+.aa{
+    display: flex; 
+   
+    column-gap: 0.9rem;
+
+}
+.aa a{
+    text-decoration: none;
+    color: #3e3e3d;
+}
+.rejouice{
+    display: flex;
+    align-items: flex-start;
+     text-align: left;
+    width: 30%;
+   
+    flex-direction: column;
+    height: 70%;
+
+}
+.rejouice video{
+    width: 80%;
+    border-radius: 0.62rem;
+}
+.list h2{
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.close{
+    position: relative;
+}
+.close::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: black;
+left: 0;
+bottom:-100%;
+transition: all ease 0.3s;
+}
+.close:hover{
+    cursor: pointer;
+
+}
+.close:hover::after{
+            width: 100%;
+           
+        
+    }
+   
+       
+    
+    .list h2{
+position: relative;
+
+    }
+    .list h2:hover{
+        cursor: pointer;
+        animation:texts 0.2s ;
+        
+
+    }
+    @keyframes texts {
+        to{
+          transform: rotateX('90deg')
+          
+        }from{
+        transform: translateY(0);
+        
+        }
+
+    }
+    .list h2::after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: black;
+        left: 0;
+        top:0;
+    top: 230%;
+
+       
+        transition: all ease 0.3s;
+    }
+    .list h2:hover::after{
+        width: 100%;
+    }
+.list button{
+    border:1px solid black;
+    font-size: 1.6rem;
+    padding: 1rem 2rem ;
+    border-radius: 4rem;
+    position: relative;
+    z-index: 7;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+}
+button::after{
+    content: "";
+position: absolute;
+width: 0%;
+height: 100%;
+background-color: black;
+left: 0;
+top:0;
+z-index: -2;
+border-radius: 4rem;
+transition: all ease 0.3s;
+}
+button:hover::after{
+    width: 100%;
+}
+.page1{
+     width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    position: relative;
+ 
+
+}
+.page1 span{
+    display: inline-block;
+}
+.gola{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #EDECE7;
+}
+.page1 video{
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+
+}
+nav{
+    width: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     box-sizing: border-box;
+    font-size: 2rem;
+    color: white;
+    z-index: 2;
+    font-family: 'NBInternationalPro-Lig';
+}
+.h4-menu{
+    transition: all 0.2s;
+}
+.h4-menu:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.page1 h1{
+    font-size: 26vw;
+    color: white;
+    z-index: 2;
+   font-family: 'Rejouice Headline';
+    box-sizing: border-box;
+   
+    transform: translateY(-20%);
+}
+.page2{
+    width: calc(100vw - 20px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.page2-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #3e3e3d;
+    border-bottom: 1px solid #3e3e3d;
+    width: 97%;
+    box-sizing: border-box;
+    margin-left: 1.5%;
+    padding: 0 0.7rem;
+    padding-top: 3rem;
+    font-family: 'NBInternationalPro-Lig';
+}
+.page2 h1{
+    padding: 2rem;
+    font-size: 3.5vw; 
+    text-align: center;
+    color: black;
+    font-weight: lighter;
+    display: inline-block;
+    height: 300px;
+    overflow-y: hidden;
+   
+  
+}
+.page2 h1 span{
+    display: inline-block;
+
+
+ 
+    
+}
+
+.page3{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+.explore{
+   
+    text-align: center;
+  
+   margin: auto;
+}
+.explore span{
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+}
+.explore h5{
+    font-size: 1.4rem;
+    color: #3e3e3d;
+    /* text-align: center; */
+    font-weight: 100;
+    font-family: 'NBInternationalPro-Lig';
+
+}
+.explore h2{
+    font-size: 4vw;
+    font-family: 'NBInternationalPro-Lig';
+    position: relative;
+    text-align: left;
+    display: block; 
+}
+
+.explore h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(to left,rgb(103, 100, 100),black);
+    left:0;
+    top:100%;
+    transition: all ease 0.01s;
+}
+.explore h2:hover::after{
+     animation:explor 0.3s 2;
+}
+.explore h2 {
+    cursor: pointer;
+}
+@keyframes explor {
+   to{
+    width: 10%;
+   } 
+   from{
+    width:100% ;
+   }
+   
+}
+.images-video{
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+.box{
+ width: 33%;
+ height: 90%;
+
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+padding: 0;
+ position: relative;
+transition: all linear 0.4s;
+
+}
+.box video{
+    width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+
+  position: absolute;
+
+}
+ .box:nth-child(1){
+    background-image:url("https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format") ;
+}
+
+.box:nth-child(2){
+    background-image:url("https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format") ;
+}
+.box:nth-child(3){
+    background-image:url("https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format") ;
+} 
+
+.box img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+   
+    transition: opacity linear 0.2s;
+}
+.box :hover { 
+ cursor: pointer;
+ opacity: 0;
+
+}
+.page4{
+    width:100vw ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    
+}
+.page4 p{
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 1rem;
+}
+.page5{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 2vw;
+    position: relative;
+ 
+}
+.page5 video{
+    width: 70vw;
+}
+.page5 div{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-family: 'NBInternationalPro-Lig';
+  
+}
+svg{
+    width: 40vw;
+    position: absolute;
+}
+.page6{
+    width: calc(100vw - 20px);
+    height: 150vh;
+    color: black;
+ 
+}
+.page6 h2{
+    font-family: 'Rejouice Headline';
+    font-size: 7vw;
+    padding: 0 3rem;
+    border-bottom: 1px solid #3e3e3d;
+}
+.page6 .explore h2{
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 100;
+    display: inline;
+}
+.swiper {
+    width: 100%;
+    height: 60vh;
+ 
+    transform: translateY(-30%);
+
+  }
+
+  .swiper-slide {
+   
+    font-size: 18px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+
+    white-space: nowrap;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+
+    
+  }
+
+
+  .swiper-slide img {
+
+    width: 25vw;
+    padding: 0 0.7rem;
+    object-fit: cover;
+  }
+
+ 
+   .footer{
+    height: 90vh;
+    width: 100vw;
+    background-color: black; 
+    position: relative;
+    
+  
+ 
+   
+   }
+   .footer-upper{
+    height: 50vh;
+    width: 100vw;
+    box-sizing: border-box;
+     color: white;
+    display: flex;
+ padding: 0 3rem;
+    justify-content: space-between;
+    flex-direction: column;
+ 
+    font-size: 1.6rem;
+    
+   }
+   .footer-upper ul{
+    list-style: none;
+   }
+   .footer-upper li{
+    font-size: 1.4rem;
+
+    color: white;
+   }
+   .foot-up-1{
+    display: flex;
+   
+    justify-content: space-between;
+   
+   }
+   .footer button{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+   }
+   .footer button:hover{
+    background-color: #828281;
+   }
+   .foot-up-2{
+    display: flex;
+       font-size:1.5rem ;
+    justify-content: space-between;
+    color: aliceblue;
+   }
+ 
+   .footer h1{
+    font-size: 17vw;
+    text-align: center;
+    color: white;
+    font-family: 'Rejouice Headline';
+    transform: translateY(-50%);
+
+   }
+   .footer h1 span{
+    display: inline-block;
+   }
+    
+   @media (max-width: 700px) {
+    html{
+        font-size: 50%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .main{
+        overflow-x: hidden;
+    }
+    
+    .loader h1{
+        font-size: 2.7rem;
+    }
+    .menu-page {
+        height: 50vh;
+    }
+    .page1{
+        align-items: flex-start;
+      width: 100vw;
+        height: 100vh;
+position: relative;
+    }
+    .page1 video{
+        width: 100vw;
+    }
+     nav{
+        padding: 1rem 2rem;
+        height: 27%;
+      
+        transform: translateY(-70%);
+
+    }
+    
+    .page1 .gola{
+    display: none;
+    }
+    .page2{
+        height: 64vh;
+        width: 100vw;
+    }
+    .page2-head{
+        font-size: 1.6rem;
+    }
+    .page2 h1{
+        font-size: 3rem;
+        padding: 0 1rem;
+        font-weight: 500;
+       
+    }
+    .page3{
+        width: 100vw;
+        height: 130vh;
+
+    }
+    .explore h5{
+     font-size: 1.9rem;
+     font-weight: 500;
+    }
+    .explore h2{
+        text-align: center;
+        font-size: 7rem;
+    }
+    .images-video{
+        white-space: nowrap;
+        overflow-x: scroll;
+        display: block;
+        column-gap: 2rem;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        
+
+    }
+    .box{
+        width: 100vw;
+        height: 70%;
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    .page4{
+        width: 100vw;
+        height: 60vh;
+    }
+    .page4 p{
+        font-size: 3rem;
+    }
+    .page5{
+        font-size: 2rem;
+       overflow-x: hidden;
+       width: 100vw;
+    }
+    .page5 video{
+        width: 170vw;
+        padding: 0 1rem;
+    
+    }
+    svg{
+        width: 90vw;
+    }
+    .page5 .gola{
+      display: none;
+    }
+    .page6{
+        width: 100vw;
+        height: 100vh;
+    }
+    .page6 h2{
+        font-size: 5rem;
+    }
+    .swiper{
+        transform: translateY(-10%);
+        width: 200vw;
+        
+    }
+    .swiper-slide{
+        width: 200vw;
+    }
+    .swiper img{
+        width: 24%;
+    }
+    .page6 .explore h2{
+        font-size: 5.5rem;
+    }
+}
